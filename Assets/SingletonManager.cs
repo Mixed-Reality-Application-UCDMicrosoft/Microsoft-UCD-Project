@@ -16,8 +16,8 @@ public class SingletonManager : MonoBehaviour
     public Slider redSlider;
     public Slider blueSlider;
     public Slider greenSlider;
-    // Start is called before the first frame update
 
+    // Start is called before the first frame update
     void Start()
     {
         currentlySelected = null;

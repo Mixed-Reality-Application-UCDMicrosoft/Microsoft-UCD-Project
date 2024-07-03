@@ -283,7 +283,7 @@
       }
     },
     "org.mixedrealitytoolkit.core": {
-      "version": "file:MixedReality/org.mixedrealitytoolkit.core-3.2.1.tgz",
+      "version": "file:MixedReality/org.mixedrealitytoolkit.core-3.2.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -335,7 +335,7 @@
       }
     },
     "org.mixedrealitytoolkit.standardassets": {
-      "version": "file:MixedReality/org.mixedrealitytoolkit.standardassets-3.1.0.tgz",
+      "version": "file:MixedReality/org.mixedrealitytoolkit.standardassets-3.2.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {

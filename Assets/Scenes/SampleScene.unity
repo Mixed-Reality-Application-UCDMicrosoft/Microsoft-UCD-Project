@@ -128,7 +128,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1242220466}
     m_Modifications:
     - target: {fileID: 1182525986, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: handType
@@ -151,16 +151,28 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.386
+      value: 3.8600001
       objectReference: {fileID: 0}
     - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.567
+      value: 1.6700006
       objectReference: {fileID: 0}
     - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4684
+      value: 0.794
       objectReference: {fileID: 0}
     - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: m_LocalRotation.w
@@ -168,15 +180,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -190,7 +202,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4182302457280623459, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 601986242425173794, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
@@ -214,26 +227,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 601986242425173794, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
       insertIndex: -1
       addedObject: {fileID: 692804520}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6406055597923527085, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1311517368851435787, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6599014034041732059, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 295619107062559783, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7575726316832662508, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 375404210672249865, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
+--- !u!4 &99510923 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6612599088134562825, guid: 2c4cecf25adbc2f4c88bc2752a9c3264, type: 3}
+  m_PrefabInstance: {fileID: 99510922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &238164214 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5908209549497931936, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -420,7 +420,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 118672800903753395, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07000005
+      value: 0.06999998
       objectReference: {fileID: 0}
     - target: {fileID: 118672800903753395, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -443,7 +443,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -455,7 +463,15 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeRed
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -463,7 +479,15 @@ PrefabInstance:
       value: SingletonManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SingletonManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3070432253060864560, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -532,11 +556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.14000005
+      value: 0.13999996
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000000029802322
+      value: 0.000000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1251,7 +1275,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 118672800903753395, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07000005
+      value: 0.06999998
       objectReference: {fileID: 0}
     - target: {fileID: 118672800903753395, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1274,7 +1298,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -1286,7 +1318,15 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeGreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeGreen
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -1294,7 +1334,15 @@ PrefabInstance:
       value: SingletonManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SingletonManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3070432253060864560, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -1363,11 +1411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.14000005
+      value: 0.13999996
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000000029802322
+      value: 0.000000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1532,19 +1580,7 @@ MonoBehaviour:
       m_Calls: []
   m_FirstSelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SingletonManager, Assembly-CSharp
-        m_MethodName: OnInteraction
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Table A
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -1923,7 +1959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1242220466
 Transform:
   m_ObjectHideFlags: 0
@@ -1939,6 +1975,8 @@ Transform:
   m_Children:
   - {fileID: 1047192437}
   - {fileID: 1736290966}
+  - {fileID: 99510923}
+  - {fileID: 1841362366}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1273145291 stripped
@@ -2439,12 +2477,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841362364}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -14, z: -3.8899999}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1242220466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1841362367
 MonoBehaviour:
@@ -2670,7 +2708,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 118672800903753395, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07000005
+      value: 0.06999998
       objectReference: {fileID: 0}
     - target: {fileID: 118672800903753395, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2693,7 +2731,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -2705,7 +2751,15 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeBlue
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -2713,7 +2767,15 @@ PrefabInstance:
       value: SingletonManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SingletonManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: OnValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870926216202133873, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
+      propertyPath: onValueUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3070432253060864560, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
@@ -2782,11 +2844,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.14000005
+      value: 0.13999996
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000000029802322
+      value: 0.000000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 7895759338294865978, guid: 882e525521c52cb4ab9230fe77b5cd72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4798,7 +4860,31 @@ MonoBehaviour:
         m_Calls: []
   <OnClicked>k__BackingField:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7346567489814942853}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1242220465}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   <OnEnabled>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
@@ -5521,8 +5607,7 @@ MonoBehaviour:
         isVariable: 0
     - key: PassiveHover
       value:
-        effects:
-        - rid: 7001448244017627138
+        effects: []
         isVariable: 0
     - key: ActiveHover
       value:
@@ -5540,16 +5625,7 @@ MonoBehaviour:
   animator: {fileID: 5533532411152152943}
   references:
     version: 2
-    RefIds:
-    - rid: 7001448244017627138
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: db3fc7cc13721f64dbb178a22ada2195, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
+    RefIds: []
 --- !u!114 &1445932826444940832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6237,8 +6313,7 @@ MonoBehaviour:
         isVariable: 0
     - key: PassiveHover
       value:
-        effects:
-        - rid: 7001448244017627138
+        effects: []
         isVariable: 0
     - key: ActiveHover
       value:
@@ -6252,20 +6327,11 @@ MonoBehaviour:
       value:
         effects: []
         isVariable: 0
-  interactable: {fileID: 1282280901520034796}
+  interactable: {fileID: 0}
   animator: {fileID: 5264815690696160416}
   references:
     version: 2
-    RefIds:
-    - rid: 7001448244017627138
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: db3fc7cc13721f64dbb178a22ada2195, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
+    RefIds: []
 --- !u!114 &1587749080140962306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6286,8 +6352,7 @@ MonoBehaviour:
         isVariable: 0
     - key: PassiveHover
       value:
-        effects:
-        - rid: 7001448244017627138
+        effects: []
         isVariable: 0
     - key: ActiveHover
       value:
@@ -6301,20 +6366,11 @@ MonoBehaviour:
       value:
         effects: []
         isVariable: 0
-  interactable: {fileID: 1282280902203010297}
+  interactable: {fileID: 0}
   animator: {fileID: 5264815688896582581}
   references:
     version: 2
-    RefIds:
-    - rid: 7001448244017627138
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: db3fc7cc13721f64dbb178a22ada2195, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
+    RefIds: []
 --- !u!1 &1593852433300359703
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,129 +7192,29 @@ MonoBehaviour:
     entries:
     - key: Disabled
       value:
-        effects:
-        - rid: 0
-        - rid: 1393819269385945089
+        effects: []
         isVariable: 0
     - key: PassiveHover
       value:
-        effects:
-        - rid: 1
-        - rid: 2
+        effects: []
         isVariable: 0
     - key: ActiveHover
       value:
-        effects:
-        - rid: 3
-        - rid: 4
+        effects: []
         isVariable: 0
     - key: Select
       value:
-        effects:
-        - rid: 5
+        effects: []
         isVariable: 1
     - key: Toggle
       value:
-        effects:
-        - rid: 6
-        - rid: 1393819269385945090
+        effects: []
         isVariable: 0
-  interactable: {fileID: 7931444774658712008}
+  interactable: {fileID: 0}
   animator: {fileID: 7931444774658712012}
   references:
     version: 2
-    RefIds:
-    - rid: 0
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 2322302707551415282}
-        color: {r: 1, g: 1, b: 1, a: 0.5019608}
-        playbackMode: 0
-        blendMode: 2
-    - rid: 1
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: f8bf36502d9096a46abc953712b2eb77, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 2
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.1
-        tintables:
-        - {fileID: 6532102304483359883}
-        color: {r: 1, g: 1, b: 1, a: 1}
-        playbackMode: 0
-        blendMode: 0
-    - rid: 3
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: 79c6ab7b5799345418a0d9950c64e20e, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 4
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 2322302707551415282}
-        color: {r: 0, g: 0, b: 0, a: 0.2}
-        playbackMode: 0
-        blendMode: 1
-    - rid: 5
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: fff9d0b22f52a554c9e5b92efc3bf3af, type: 2}
-        speed: 1
-        playbackMode: 1
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 6
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 2322302707551415282}
-        color: {r: 0, g: 0, b: 0, a: 0.2509804}
-        playbackMode: 0
-        blendMode: 1
-    - rid: 1393819269385945089
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 343159010030113927}
-        - {fileID: 8066836093083052123}
-        - {fileID: 8047137385976592546}
-        - {fileID: 36289379831287805}
-        - {fileID: 6672733370383001185}
-        color: {r: 1, g: 1, b: 1, a: 0.5019608}
-        playbackMode: 0
-        blendMode: 2
-    - rid: 1393819269385945090
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 8047137385976592546}
-        color: {r: 1, g: 1, b: 1, a: 1}
-        playbackMode: 0
-        blendMode: 0
+    RefIds: []
 --- !u!114 &2710916778447021006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9697,129 +9653,29 @@ MonoBehaviour:
     entries:
     - key: Disabled
       value:
-        effects:
-        - rid: 0
-        - rid: 1393819269385945089
+        effects: []
         isVariable: 0
     - key: PassiveHover
       value:
-        effects:
-        - rid: 1
-        - rid: 2
+        effects: []
         isVariable: 0
     - key: ActiveHover
       value:
-        effects:
-        - rid: 3
-        - rid: 4
+        effects: []
         isVariable: 0
     - key: Select
       value:
-        effects:
-        - rid: 5
+        effects: []
         isVariable: 1
     - key: Toggle
       value:
-        effects:
-        - rid: 6
-        - rid: 1393819269385945090
+        effects: []
         isVariable: 0
-  interactable: {fileID: 1282280902203010297}
+  interactable: {fileID: 0}
   animator: {fileID: 1282280902203010301}
   references:
     version: 2
-    RefIds:
-    - rid: 0
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6909594204876138179}
-        color: {r: 1, g: 1, b: 1, a: 0.5019608}
-        playbackMode: 0
-        blendMode: 2
-    - rid: 1
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: f8bf36502d9096a46abc953712b2eb77, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 2
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.1
-        tintables:
-        - {fileID: 2701884072875487674}
-        color: {r: 1, g: 1, b: 1, a: 1}
-        playbackMode: 0
-        blendMode: 0
-    - rid: 3
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: 79c6ab7b5799345418a0d9950c64e20e, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 4
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6909594204876138179}
-        color: {r: 0, g: 0, b: 0, a: 0.2}
-        playbackMode: 0
-        blendMode: 1
-    - rid: 5
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: fff9d0b22f52a554c9e5b92efc3bf3af, type: 2}
-        speed: 1
-        playbackMode: 1
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 6
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6909594204876138179}
-        color: {r: 0, g: 0, b: 0, a: 0.2509804}
-        playbackMode: 0
-        blendMode: 1
-    - rid: 1393819269385945089
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 8870560870781622710}
-        - {fileID: 1164917176444462442}
-        - {fileID: 1185741381618677139}
-        - {fileID: 9176464326495322828}
-        - {fileID: 2541150548122938192}
-        color: {r: 1, g: 1, b: 1, a: 0.5019608}
-        playbackMode: 0
-        blendMode: 2
-    - rid: 1393819269385945090
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 1185741381618677139}
-        color: {r: 1, g: 1, b: 1, a: 1}
-        playbackMode: 0
-        blendMode: 0
+    RefIds: []
 --- !u!114 &6509571180407630684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9836,129 +9692,29 @@ MonoBehaviour:
     entries:
     - key: Disabled
       value:
-        effects:
-        - rid: 0
-        - rid: 1393819269385945089
+        effects: []
         isVariable: 0
     - key: PassiveHover
       value:
-        effects:
-        - rid: 1
-        - rid: 2
+        effects: []
         isVariable: 0
     - key: ActiveHover
       value:
-        effects:
-        - rid: 3
-        - rid: 4
+        effects: []
         isVariable: 0
     - key: Select
       value:
-        effects:
-        - rid: 5
+        effects: []
         isVariable: 1
     - key: Toggle
       value:
-        effects:
-        - rid: 6
-        - rid: 1393819269385945090
+        effects: []
         isVariable: 0
-  interactable: {fileID: 1282280901520034796}
+  interactable: {fileID: 0}
   animator: {fileID: 1282280901520034792}
   references:
     version: 2
-    RefIds:
-    - rid: 0
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6909594206305518038}
-        color: {r: 1, g: 1, b: 1, a: 0.5019608}
-        playbackMode: 0
-        blendMode: 2
-    - rid: 1
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: f8bf36502d9096a46abc953712b2eb77, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 2
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.1
-        tintables:
-        - {fileID: 2701884072527533743}
-        color: {r: 1, g: 1, b: 1, a: 1}
-        playbackMode: 0
-        blendMode: 0
-    - rid: 3
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: 79c6ab7b5799345418a0d9950c64e20e, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 4
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6909594206305518038}
-        color: {r: 0, g: 0, b: 0, a: 0.2}
-        playbackMode: 0
-        blendMode: 1
-    - rid: 5
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: fff9d0b22f52a554c9e5b92efc3bf3af, type: 2}
-        speed: 1
-        playbackMode: 1
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 6
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6909594206305518038}
-        color: {r: 0, g: 0, b: 0, a: 0.2509804}
-        playbackMode: 0
-        blendMode: 1
-    - rid: 1393819269385945089
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 8870560872270298787}
-        - {fileID: 1164917174686728831}
-        - {fileID: 1185741383341822598}
-        - {fileID: 9176464327950018009}
-        - {fileID: 2541150548546374725}
-        color: {r: 1, g: 1, b: 1, a: 0.5019608}
-        playbackMode: 0
-        blendMode: 2
-    - rid: 1393819269385945090
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 1185741383341822598}
-        color: {r: 1, g: 1, b: 1, a: 1}
-        playbackMode: 0
-        blendMode: 0
+    RefIds: []
 --- !u!114 &6532102304483359883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10151,129 +9907,29 @@ MonoBehaviour:
     entries:
     - key: Disabled
       value:
-        effects:
-        - rid: 0
-        - rid: 1393819269385945089
+        effects: []
         isVariable: 0
     - key: PassiveHover
       value:
-        effects:
-        - rid: 1
-        - rid: 2
+        effects: []
         isVariable: 0
     - key: ActiveHover
       value:
-        effects:
-        - rid: 3
-        - rid: 4
+        effects: []
         isVariable: 0
     - key: Select
       value:
-        effects:
-        - rid: 5
+        effects: []
         isVariable: 1
     - key: Toggle
       value:
-        effects:
-        - rid: 6
-        - rid: 1393819269385945090
+        effects: []
         isVariable: 0
   interactable: {fileID: 1445932826444940835}
   animator: {fileID: 1445932826444940839}
   references:
     version: 2
-    RefIds:
-    - rid: 0
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6501122823585352729}
-        color: {r: 1, g: 1, b: 1, a: 0.5019608}
-        playbackMode: 0
-        blendMode: 2
-    - rid: 1
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: f8bf36502d9096a46abc953712b2eb77, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 2
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.1
-        tintables:
-        - {fileID: 2352122203690457952}
-        color: {r: 1, g: 1, b: 1, a: 1}
-        playbackMode: 0
-        blendMode: 0
-    - rid: 3
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: 79c6ab7b5799345418a0d9950c64e20e, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 4
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6501122823585352729}
-        color: {r: 0, g: 0, b: 0, a: 0.2}
-        playbackMode: 0
-        blendMode: 1
-    - rid: 5
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: fff9d0b22f52a554c9e5b92efc3bf3af, type: 2}
-        speed: 1
-        playbackMode: 1
-        weightMode: 0
-        transitionDuration: 0
-    - rid: 6
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 6501122823585352729}
-        color: {r: 0, g: 0, b: 0, a: 0.2509804}
-        playbackMode: 0
-        blendMode: 1
-    - rid: 1393819269385945089
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 9133862498094232428}
-        - {fileID: 1581311501027315632}
-        - {fileID: 1562738146206850889}
-        - {fileID: 8827677863769303062}
-        - {fileID: 2781137030303187338}
-        color: {r: 1, g: 1, b: 1, a: 0.5019608}
-        playbackMode: 0
-        blendMode: 2
-    - rid: 1393819269385945090
-      type: {class: GraphicTintEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: GraphicTint
-        transitionDuration: 0.15
-        tintables:
-        - {fileID: 1562738146206850889}
-        color: {r: 1, g: 1, b: 1, a: 1}
-        playbackMode: 0
-        blendMode: 0
+    RefIds: []
 --- !u!114 &6889881478096864293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11527,8 +11183,7 @@ MonoBehaviour:
         isVariable: 0
     - key: PassiveHover
       value:
-        effects:
-        - rid: 7001448244017627138
+        effects: []
         isVariable: 0
     - key: ActiveHover
       value:
@@ -11542,20 +11197,11 @@ MonoBehaviour:
       value:
         effects: []
         isVariable: 0
-  interactable: {fileID: 7931444774658712008}
+  interactable: {fileID: 0}
   animator: {fileID: 3947920373427691140}
   references:
     version: 2
-    RefIds:
-    - rid: 7001448244017627138
-      type: {class: AnimationEffect, ns: MixedReality.Toolkit.UX, asm: MixedReality.Toolkit.UXCore}
-      data:
-        name: Animation
-        clip: {fileID: 7400000, guid: db3fc7cc13721f64dbb178a22ada2195, type: 2}
-        speed: 1
-        playbackMode: 0
-        weightMode: 0
-        transitionDuration: 0
+    RefIds: []
 --- !u!114 &7931444774658712008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13450,6 +13096,4 @@ SceneRoots:
   - {fileID: 656600999}
   - {fileID: 3464395001813646478}
   - {fileID: 3877440362221770324}
-  - {fileID: 1841362366}
   - {fileID: 1242220466}
-  - {fileID: 99510922}
