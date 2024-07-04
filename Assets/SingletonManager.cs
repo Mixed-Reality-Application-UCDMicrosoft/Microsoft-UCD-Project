@@ -33,7 +33,7 @@ public class SingletonManager : MonoBehaviour
         Debug.Log(name);
         currentText.text = "Currently Selected: " + name;
         currentlySelected = GameObject.Find(name);
-        currentlySelected_Interaction = currentlySelected.transform.Find("Table Detailed");
+        currentlySelected_Interaction = currentlySelected.transform.Find("Table Detailed/Table");
 
     }
 
