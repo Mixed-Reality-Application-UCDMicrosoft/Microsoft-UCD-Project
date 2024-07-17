@@ -1,79 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
-public class Spawner : MonoBehaviour
+
+// the Obj_toSpam have to be a prefab GameObject (see comment in line 29)
+public class spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject boat;
-    [SerializeField] private GameObject coral;
-    [SerializeField] private GameObject darkPurpleSeaGrass;
-    [SerializeField] private GameObject greenSeaGrass;
-    [SerializeField] private GameObject lightPurpleSeaGrass;
-    [SerializeField] private GameObject largeRock;
-    [SerializeField] private GameObject mediumRock;
-    [SerializeField] private GameObject smallRock;
-    [SerializeField] private GameObject treasureChest;
-    [SerializeField] private GameObject tubeCoral;
-    [SerializeField] Transform parent;
+    //public Transform toSpawm = null;
+    public GameObject Obj_toSpawn;
+    public float rate = 1f;
 
-    public void SpawnBoat()
+    // Start is called before the first frame update
+    void Start()
     {
-        Vector3 position = new Vector3(-.2f, 0, .7f);
-        Instantiate(boat, position, Quaternion.Euler(0, 180,0), parent);
-    }
-    public void SpawnCoral()
-    {
-        Vector3 position = new Vector3(.19f, 0, .7f);
-        Instantiate(coral, position, Quaternion.Euler(0, 180, 0), parent);
+        StartCoroutine(Spawner());
     }
 
-    public void SpawnDarkPurpleSeaGrass()
+    IEnumerator Spawner()
     {
-        Vector3 position = new Vector3(-.24f, 0, .7f);
-        Instantiate(darkPurpleSeaGrass, position, Quaternion.Euler(0, 180, 0), parent);
-    }
+        while (true)
+        {
+            if (Obj_toSpawn != null)
+            { 
+                // (object to spawn, position, rotation)
+                //Instantiate(toSpawm, transform.position + Random.insideUnitSphere, Quaternion.identity);
+                //Instantiate(toSpawm, transform.position + Vector3.forward, Quaternion.identity);
+                
+                // add the component to each of the instantiated objects without the need to have the original one in the scene
+                // catch the object that has been instantiated
+                GameObject objectSpawned = Instantiate(Obj_toSpawn, transform.position + transform.forward, Quaternion.identity);
+                // add a component 
+                objectSpawned.AddComponent<pushForward>();
 
-    public void SpawnGreenSeaGrass()
-    {
-        Vector3 position = new Vector3(0.15f, 0, .7f);
-        Instantiate(greenSeaGrass, position, Quaternion.Euler(0, 180, 0), parent);
+                yield return new WaitForSeconds(1f / rate);       // rate = 1   ->  spawn every second
+                // spawm guaranteed for a fixed rate (not every frame)
+            }
+        }
     }
-
-    public void SpawnLightPurpleSeaGrass()
-    {
-        Vector3 position = new Vector3(.19f, 0, .7f);
-        Instantiate(lightPurpleSeaGrass, position, Quaternion.Euler(0, 180, 0), parent);
-    }
-
-    public void SpawnLargeRock()
-    {
-        Vector3 position = new Vector3(.23f, 0, .7f);
-        Instantiate(largeRock, position, Quaternion.Euler(0, 180, 0), parent);
-    }
-
-    public void SpawnMediumRock()
-    {
-        Vector3 position = new Vector3(.26f, 0, .85f);
-        Instantiate(mediumRock, position, Quaternion.Euler(0, 180, 0), parent);
-    }
-
-    public void SpawnSmallRock()
-    {
-        Vector3 position = new Vector3(.23f, 0, .85f);
-        Instantiate(smallRock, position, Quaternion.Euler(0, 180, 0), parent);
-    }
-
-    public void SpawnTreasureChest()
-    {
-        Vector3 position = new Vector3(0, 0, .78f);
-        Instantiate(treasureChest, position, Quaternion.Euler(0, 180, 0), parent);
-    }
-
-    public void SpawnTubeCoral()
-    {
-        Vector3 position = new Vector3(.14f, 0, .7f);
-        Instantiate(tubeCoral, position, Quaternion.Euler(0, 180, 0), parent);
-    }
-
 }
