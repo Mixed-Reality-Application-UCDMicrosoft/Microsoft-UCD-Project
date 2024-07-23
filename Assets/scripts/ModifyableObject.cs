@@ -12,7 +12,6 @@ public class ModifyableObject : MonoBehaviour
     private void Start()
     {
         r = colorChangeObject.GetComponent<Renderer>();
-        ChangeColor(currentColor);
     }
 
     public void ChangeColor(Color c)
