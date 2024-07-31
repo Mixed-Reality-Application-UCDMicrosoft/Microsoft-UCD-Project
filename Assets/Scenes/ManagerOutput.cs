@@ -8,7 +8,6 @@ public class ManagerOutput : MonoBehaviour
 {
 
     private ARMarkerManager m_arMarkerManager;
-    public string outputString;
     public TextMeshProUGUI debugText;
     // Start is called before the first frame update
     void Start()
@@ -19,18 +18,12 @@ public class ManagerOutput : MonoBehaviour
 
     void OnQRCodesChanged(ARMarkersChangedEventArgs args)
     {
-        foreach (ARMarker qrCode in args.added)
-            outputString += $"QR code with the ID {qrCode.trackableId} added.";
-
-        foreach (ARMarker qrCode in args.removed)
-            outputString += $"QR code with the ID {qrCode.trackableId} removed.";
-
         foreach (ARMarker qrCode in args.updated)
         {
-            outputString += $"QR code with the ID {qrCode.trackableId} updated.";
-            outputString += $"Pos:{qrCode.transform.position} Rot:{qrCode.transform.rotation} Size:{qrCode.size}";
-        }
-
-        debugText.text = outputString;
+            string s = $"Position: {qrCode.transform.position}\nRotation: {qrCode.transform.rotation}\nCenter {qrCode.center}\n";
+            s += $"Text: {qrCode.GetDecodedString()}\n";
+            s += $"State: {qrCode.trackingState}";
+            debugText.text = s;
+        } 
     }
 }
