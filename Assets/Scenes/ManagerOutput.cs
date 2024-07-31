@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.OpenXR;
-
+using TMPro;
 
 public class ManagerOutput : MonoBehaviour
 {
 
     private ARMarkerManager m_arMarkerManager;
     public string outputString;
+    public TextMeshProUGUI debugText;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +30,7 @@ public class ManagerOutput : MonoBehaviour
             outputString += $"QR code with the ID {qrCode.trackableId} updated.";
             outputString += $"Pos:{qrCode.transform.position} Rot:{qrCode.transform.rotation} Size:{qrCode.size}";
         }
+
+        debugText.text = outputString;
     }
 }
