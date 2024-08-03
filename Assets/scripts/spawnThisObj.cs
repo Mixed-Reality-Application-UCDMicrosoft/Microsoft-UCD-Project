@@ -16,7 +16,7 @@ public class spawnThisObj : MonoBehaviour
     {
 
         theCamera = GameObject.Find("Main Camera");
-        HouseMenu = GameObject.Find("HandMenu");
+        HouseMenu = GameObject.Find("VerticalScrolling");
 
         
         LofO = new GameObject[10]; 
@@ -24,11 +24,16 @@ public class spawnThisObj : MonoBehaviour
 
     public void Spawner()
     {
+        float spawnHeightOffset = 0.01f;
+        float cameraOffset = -0.5f;
 
-        Vector3 spawnPosition = plane.position + plane.up + theCamera.transform.forward * 2;
+        Vector3 planeTopPosition = plane.position + plane.up * (plane.localScale.y / 2 + spawnHeightOffset);
+        Vector3 cameraPosition = theCamera.transform.position + theCamera.transform.forward * cameraOffset;
+
+        Vector3 spawnPosition = new Vector3(cameraPosition.x, planeTopPosition.y, cameraPosition.z);
+
         GameObject objectSpawned = Instantiate(Obj_toSpawn, spawnPosition, Quaternion.identity);
-        
-        
+
         if (Idx < LofO.Length)
         {
             LofO[Idx] = objectSpawned;
@@ -38,8 +43,7 @@ public class spawnThisObj : MonoBehaviour
         {
             Debug.LogWarning("LofO array is full!");
         }
-
-        
     }
+
 }
 
