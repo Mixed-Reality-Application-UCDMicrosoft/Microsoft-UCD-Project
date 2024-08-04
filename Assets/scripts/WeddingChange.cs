@@ -10,7 +10,10 @@ public class WeddingChange : MonoBehaviour
     public ModifyableObject currentlySelected;
     public GameObject canvasDialogue;
     public TextMeshProUGUI colorText;
+    public TextMeshProUGUI selectedHeader;
     public string str;
+
+    public Slider r, g, b;
 
     // Start is called before the first frame update
     void Start()
@@ -19,16 +22,23 @@ public class WeddingChange : MonoBehaviour
         colorText.text = "█";
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnInteraction(GameObject interactedObject)
     {
-        
-    }
+        if (currentlySelected != null)
+        {
+            OnCancelDialogue();
+        }
 
-    public void OnInteraction(GameObject something)
-    {
-        currentlySelected = something.GetComponent<ModifyableObject>();
-        Debug.Log("Interacted with " + something.name);
+        interactedObject.GetComponent<BoundsControl>().HandlesActive = true;
+
+        currentlySelected = interactedObject.GetComponent<ModifyableObject>();
+        Debug.Log("Interacted with " + currentlySelected.nameObject);
+        selectedHeader.text = "Additional Settings for " + currentlySelected.nameObject;
+
+        Color c = currentlySelected.GetColor();
+        r.Value = c.r;
+        g.Value = c.g;
+        b.Value = c.b;
         canvasDialogue.SetActive(true);
 
     }
@@ -60,6 +70,7 @@ public class WeddingChange : MonoBehaviour
         }
         colorText.color = color;
         currentlySelected.ChangeColor(color);
+        
     }
 
     public void OnCancelDialogue()
@@ -85,6 +96,13 @@ public class WeddingChange : MonoBehaviour
             child.ChangeColor(c);
             child.ApplyCurrentColor();
         }
-        
+
+        canvasDialogue.SetActive(false);
+    }
+
+    public void OnConfirm()
+    {
+        currentlySelected.ApplyCurrentColor();
+        canvasDialogue.SetActive(false);
     }
 }
