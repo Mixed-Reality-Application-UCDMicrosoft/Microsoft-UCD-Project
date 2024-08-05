@@ -491,7 +491,7 @@ MonoBehaviour:
   colorChangeObjects:
   - {fileID: 9153512574549304857}
   - {fileID: 686231378031165375}
-  nameObject: Chair Modifyable
+  nameObject: Chair
   currentColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!54 &5701944491428151047
 Rigidbody:

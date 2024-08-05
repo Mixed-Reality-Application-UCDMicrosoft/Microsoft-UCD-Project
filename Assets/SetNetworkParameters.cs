@@ -17,5 +17,7 @@ public class SetNetworkParameters : MonoBehaviour
         ushort.TryParse(port.text, out ushort result);
 
         nm.GetComponent<kcp2k.KcpTransport>().port = result;
+
+
     }
 }

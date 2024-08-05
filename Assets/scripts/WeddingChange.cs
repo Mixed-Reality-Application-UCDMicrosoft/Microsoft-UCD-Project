@@ -28,12 +28,11 @@ public class WeddingChange : MonoBehaviour
         {
             OnCancelDialogue();
         }
-
         interactedObject.GetComponent<BoundsControl>().HandlesActive = true;
+
 
         currentlySelected = interactedObject.GetComponent<ModifyableObject>();
         Debug.Log("Interacted with " + currentlySelected.nameObject);
-        selectedHeader.text = "Additional Settings for " + currentlySelected.nameObject;
 
         Color c = currentlySelected.GetColor();
         r.Value = c.r;
@@ -70,7 +69,6 @@ public class WeddingChange : MonoBehaviour
         }
         colorText.color = color;
         currentlySelected.ChangeColor(color);
-        
     }
 
     public void OnCancelDialogue()
@@ -96,8 +94,7 @@ public class WeddingChange : MonoBehaviour
             child.ChangeColor(c);
             child.ApplyCurrentColor();
         }
-
-        canvasDialogue.SetActive(false);
+        
     }
 
     public void OnConfirm()
