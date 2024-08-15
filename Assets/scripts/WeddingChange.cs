@@ -11,15 +11,19 @@ public class WeddingChange : MonoBehaviour
     public GameObject canvasDialogue;
     public TextMeshProUGUI colorText;
     public TextMeshProUGUI selectedHeader;
-    public string str;
 
     public Slider r, g, b;
+
+    public GameObject chairObject;
+    public GameObject chairParent;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("started");
         colorText.text = "█";
+
     }
 
     public void OnInteraction(GameObject interactedObject)

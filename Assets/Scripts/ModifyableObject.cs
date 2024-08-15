@@ -8,18 +8,12 @@ public class ModifyableObject : MonoBehaviour
     public string nameObject;
 
     public Color currentColor;
-
-    private Rigidbody rb;
-
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
-
+    
 
     public void ChangeColor(Color c)
-    { 
-        for (int i = 0; i < colorChangeObjects.Length; i++) {
+    {
+        for (int i = 0; i < colorChangeObjects.Length; i++)
+        {
             colorChangeObjects[i].GetComponent<Renderer>().material.color = c;
         }
     }
@@ -31,24 +25,11 @@ public class ModifyableObject : MonoBehaviour
 
     public void ResetColor()
     {
-        for (int i = 0; i < colorChangeObjects.Length; i++)
+        for (int i = 0;i < colorChangeObjects.Length;i++)
         {
-            colorChangeObjects[i].GetComponent<Renderer>().material.color = currentColor;
+            colorChangeObjects[i].GetComponent<Renderer>();
         }
     }
 
-    public Color GetColor()
-    {
-        return currentColor;
-    }
-
-    public void InteractionEnded()
-    {
-        rb.isKinematic = false;
-    }
-
-    public void InteractionStarted()
-    {
-        rb.isKinematic = true;
-    }
+    public Color GetColor() { return currentColor; }
 }

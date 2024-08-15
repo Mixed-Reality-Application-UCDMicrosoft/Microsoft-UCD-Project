@@ -8,6 +8,7 @@ public class ModifyableObject : MonoBehaviour
     public string nameObject;
 
     public Color currentColor;
+    
 
     public void ChangeColor(Color c)
     {

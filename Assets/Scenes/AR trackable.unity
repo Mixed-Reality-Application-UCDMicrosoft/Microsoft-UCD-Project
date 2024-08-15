@@ -755,7 +755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   markerPrefab: {fileID: 8870426007451748652, guid: c933e1741594b4d5fa3528a3dd7e8761, type: 3}
   enabledMarkerTypes: 01000000
-  defaultTransformMode: 0
+  defaultTransformMode: 1
 --- !u!114 &1971414001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,7 +800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 631718e4ef88bc34d975785ae0a60013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputString: 
   debugText: {fileID: 389949718}
 --- !u!1 &1988582716
 GameObject:
