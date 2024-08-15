@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using Mirror;
 using TMPro;
@@ -15,8 +14,10 @@ public class ServerClientStatus : MonoBehaviour
 
     public CurrentState state;
 
-    public bool buttonPressed;
+    private bool buttonPressed;
 
+    private string s;
+    private List<int> connections;
     public void ReceiveButtonPress()
     {
         buttonPressed = true;
@@ -33,6 +34,8 @@ public class ServerClientStatus : MonoBehaviour
         {
             txt.text = $"Conneting to client";
         }
+        connections = new List<int>();
+        s = "";
     }
 
     // Update is called once per frame
@@ -49,23 +52,33 @@ public class ServerClientStatus : MonoBehaviour
                     state = CurrentState.CONNECTED;
                 }
             }
-            else
-            {
-                foreach (var conn in NetworkServer.connections.Values)
-                {
-                    if (conn.isReady)
-                    {
-                        txt.text = $"Client with IP Adress: {conn.address} connected !";
-                        nextButton.SetActive(true);
-                        state = CurrentState.CONNECTED;
-                    }
-                }
-            }
-        } else if (state == CurrentState.CONNECTED)
+        }
+        if (isServer)
         {
-            if (buttonPressed)
+            foreach (var conn in NetworkServer.connections.Values)
             {
-                
+                if (conn.isReady)
+                {
+                    bool foundValue = false;
+                    foreach (int conID in connections)
+                        if (conID == conn.connectionId)
+                        {
+                            foundValue = true;
+                            break;
+                        }
+                    if (!foundValue)
+                    {
+                        s += $"Client with IP Adress: {conn.address} connected with connection ID: {conn.connectionId} !\n";
+                        connections.Add(conn.connectionId);
+                        txt.text = s;
+                        if (connections.Count > 1)
+                        {
+                            nextButton.SetActive(true);
+                            state = CurrentState.CONNECTED;
+                        }
+                    }
+
+                }
             }
         }
     }
