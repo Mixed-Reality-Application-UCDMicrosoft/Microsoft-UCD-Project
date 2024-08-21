@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/Scenes/AR trackable.unity
     guid: ba56d00f960ee497fb5ae2a342f47880
+  - enabled: 1
+    path: Assets/Scenes/SampleScene 3.unity
+    guid: 24b815688ed494a89bf323e8c2595f3b
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 091f24352f8eb724fbd076f86fd4d0b5, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e3196a8403f78ec4580e53502120bcab, type: 2}
