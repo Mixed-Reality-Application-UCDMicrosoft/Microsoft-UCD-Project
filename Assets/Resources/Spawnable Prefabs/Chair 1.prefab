@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.879
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.062
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.9485
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -93,15 +93,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5263821434200282754}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5701944491428151047}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1249256320133011253}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6105136178392271355}
   m_SourcePrefab: {fileID: 100100000, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
 --- !u!1 &440199038059933230 stripped
 GameObject:
@@ -188,7 +179,19 @@ MonoBehaviour:
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5701944491428151047}
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: WeddingChange, Assembly-CSharp
+        m_MethodName: OnInteraction
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 440199038059933230}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
         m_Mode: 6
@@ -203,7 +206,7 @@ MonoBehaviour:
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5701944491428151047}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
         m_Mode: 6
@@ -430,7 +433,7 @@ MonoBehaviour:
   interactable: {fileID: 0}
   toggleHandlesOnClick: 1
   dragToggleThreshold: 0.02
-  target: {fileID: 0}
+  target: {fileID: 959326222112240788}
   handlesActive: 0
   enabledHandles: 5
   rotateAnchor: 1
@@ -499,84 +502,6 @@ MonoBehaviour:
   - {fileID: 686231378031165375}
   nameObject: Chair
   currentColor: {r: 1, g: 1, b: 1, a: 0}
---- !u!54 &5701944491428151047
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440199038059933230}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!114 &1249256320133011253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440199038059933230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff3ba0becae47b8b9381191598957c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  target: {fileID: 959326222112240788}
-  syncPosition: 1
-  syncRotation: 1
-  syncScale: 0
-  onlySyncOnChange: 1
-  compressRotation: 1
-  interpolatePosition: 1
-  interpolateRotation: 1
-  interpolateScale: 1
-  coordinateSpace: 0
-  sendIntervalMultiplier: 1
-  timelineOffset: 0
-  showGizmos: 1
-  showOverlay: 0
-  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
-  onlySyncOnChangeCorrectionMultiplier: 2
-  rotationSensitivity: 0.01
-  positionPrecision: 0.01
-  scalePrecision: 0.01
---- !u!114 &6105136178392271355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440199038059933230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 0
-  _assetId: 3064257125
-  serverOnly: 0
-  visibility: 0
-  hasSpawned: 0
 --- !u!1 &686231378031165375 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 243041194690276544, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
