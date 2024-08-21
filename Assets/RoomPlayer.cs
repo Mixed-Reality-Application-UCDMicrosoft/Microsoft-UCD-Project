@@ -172,9 +172,34 @@ public class RoomPlayer : NetworkBehaviour
     }
 
     [Client]
-    public void OnLayoutChange()
+    public void OnLayoutChange(string a)
     {
-        CmdChangeLayout();
+        switch(a)
+        {
+            case "WEDDING1":
+                CmdChangeLayout(Layouts.WEDDING1);
+                break;
+            case "WEDDING2":
+                CmdChangeLayout(Layouts.WEDDING2);
+                break;
+            case "CORPORATE1":
+                CmdChangeLayout(Layouts.CORPORATE1);
+                break;
+            case "CORPORATE2":
+                CmdChangeLayout(Layouts.CORPORATE2);
+                break;
+            case "INFORMAL1":
+                CmdChangeLayout(Layouts.INFORMAL1);
+                break;
+            case "INFORMAL2":
+                CmdChangeLayout(Layouts.INFORMAL2);
+                break;
+            default:
+                Debug.LogError($"Invalid Layout Name - ${a}", gameObject);
+                break;
+
+        }
+
     }
 
     [Client]
@@ -219,26 +244,21 @@ public class RoomPlayer : NetworkBehaviour
     }
 
     [Command]
-    private void CmdChangeLayout()
+    private void CmdChangeLayout(Layouts a )
     {
-        if (SelectedLayout == Layouts.NONE)
-        {
+        
+        
             foreach(var p in Network.RoomPlayers)
             {
-                p.SelectedLayout = Layouts.WEDDING1;
+                p.SelectedLayout = a;
             }
-        }
-        else
-        {
-            foreach (var p in Network.RoomPlayers)
-            {
-                p.SelectedLayout = Layouts.NONE;
-            }
-        }
+        
+        
+
     }
 }
 
 public enum Layouts
 {
-    NONE, WEDDING1, WEDDING2, CORPORATE1
+    NONE, WEDDING1, WEDDING2, CORPORATE1, CORPORATE2, INFORMAL1, INFORMAL2
 }

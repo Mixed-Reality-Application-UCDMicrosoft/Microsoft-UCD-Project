@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class NetworkedObjectManipulator : NetworkBehaviour
 {
-
+    public int ownerID;
     public void TransferOwnershipObject()
     {
         Debug.Log($"Client: {NetworkClient.connection.connectionId} {connectionToServer}");
