@@ -7850,7 +7850,7 @@ Transform:
   m_GameObject: {fileID: 7840537568536890389}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.013}
+  m_LocalPosition: {x: 0, y: 0.051, z: -2.013}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8740,7 +8740,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5004501333808698287}
+      objectReference: {fileID: 567164891928079136}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -8786,7 +8786,7 @@ PrefabInstance:
       addedObject: {fileID: 1177545265906000670}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5004501333808698287}
+      addedObject: {fileID: 567164891928079136}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!1 &1519339326403829477 stripped
 GameObject:
@@ -8827,7 +8827,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &5004501333808698287
+--- !u!114 &567164891928079136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8842,9 +8842,23 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects:
+  - {fileID: 7785015735151367890}
+  - {fileID: 1912862630126882676}
+  CurrentColor: '#FFFFFF'
+--- !u!1 &1912862630126882676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 686231378031165375, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
+  m_PrefabInstance: {fileID: 1373071907835031755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2188212572973728863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
+  m_PrefabInstance: {fileID: 1373071907835031755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7785015735151367890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9153512574549304857, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
   m_PrefabInstance: {fileID: 1373071907835031755}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1463510914183940687
@@ -8976,7 +8990,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3570180309054176035}
+      objectReference: {fileID: 3655389459176389329}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -9022,7 +9036,7 @@ PrefabInstance:
       addedObject: {fileID: 7149854788300432868}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3570180309054176035}
+      addedObject: {fileID: 3655389459176389329}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!1 &1364497268651015413 stripped
 GameObject:
@@ -9063,7 +9077,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &3570180309054176035
+--- !u!114 &3655389459176389329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9078,6 +9092,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!4 &1847737699090261583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
@@ -9146,7 +9162,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1205502132832434495}
+      objectReference: {fileID: 7248549028603078742}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -9192,7 +9208,7 @@ PrefabInstance:
       addedObject: {fileID: 8613119949760120967}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1205502132832434495}
+      addedObject: {fileID: 7248549028603078742}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!4 &1500461920639623280 stripped
 Transform:
@@ -9238,7 +9254,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &1205502132832434495
+--- !u!114 &7248549028603078742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9253,6 +9269,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!1001 &2022589978611199273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9316,7 +9334,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 769072058165577729}
+      objectReference: {fileID: 6550728136032290353}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -9362,7 +9380,7 @@ PrefabInstance:
       addedObject: {fileID: 8845043027270378099}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 769072058165577729}
+      addedObject: {fileID: 6550728136032290353}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!4 &1243442936857041341 stripped
 Transform:
@@ -9408,7 +9426,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &769072058165577729
+--- !u!114 &6550728136032290353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9423,6 +9441,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!1001 &2513346383093463983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9451,6 +9471,10 @@ PrefabInstance:
       propertyPath: colorText
       value: 
       objectReference: {fileID: 9092324675646218145}
+    - target: {fileID: 3888195890088247152, guid: 76b2e16494e9042e2a0e13c6048b47d4, type: 3}
+      propertyPath: chairParent
+      value: 
+      objectReference: {fileID: 8253718301047487557}
     - target: {fileID: 3888195890088247152, guid: 76b2e16494e9042e2a0e13c6048b47d4, type: 3}
       propertyPath: canvasDialogue
       value: 
@@ -9583,7 +9607,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 345519663000418048}
+      objectReference: {fileID: 5459689289809775676}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -9629,7 +9653,7 @@ PrefabInstance:
       addedObject: {fileID: 2166605099250563706}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 345519663000418048}
+      addedObject: {fileID: 5459689289809775676}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!1 &2378351680158517413 stripped
 GameObject:
@@ -9670,7 +9694,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &345519663000418048
+--- !u!114 &5459689289809775676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9685,6 +9709,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!4 &3047330475820257823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
@@ -10211,6 +10237,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: 
 --- !u!4 &3258955243439615624 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7c7f6e140027fbb4191a0e46c83845a4, type: 3}
@@ -10279,7 +10307,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2290003636698633599}
+      objectReference: {fileID: 4047770477601605336}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -10325,7 +10353,7 @@ PrefabInstance:
       addedObject: {fileID: 2311823045726451728}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2290003636698633599}
+      addedObject: {fileID: 4047770477601605336}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!1 &3931419867154436054 stripped
 GameObject:
@@ -10366,7 +10394,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &2290003636698633599
+--- !u!114 &4047770477601605336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10381,6 +10409,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!4 &4450934286309594476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
@@ -10461,7 +10491,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5622497841095034733}
+      objectReference: {fileID: 3892794976312960690}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -10469,10 +10499,6 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TransferOwnershipObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
-      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnInteraction
       objectReference: {fileID: 0}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -10487,10 +10513,6 @@ PrefabInstance:
       value: WeddingChange, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
-      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: WeddingChange, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 0}
@@ -10499,16 +10521,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3767168369346517040}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
-      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 3767168369346517040}
-    - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
-      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -10522,10 +10536,6 @@ PrefabInstance:
       propertyPath: manipulationStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2794235424484757819, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
-      propertyPath: manipulationStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5622497841095034733}
     - target: {fileID: 2794235424484757819, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: manipulationStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -10551,7 +10561,7 @@ PrefabInstance:
       addedObject: {fileID: 3139853795222755757}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5622497841095034733}
+      addedObject: {fileID: 3892794976312960690}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!114 &1635028408863945818 stripped
 MonoBehaviour:
@@ -10603,7 +10613,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &5622497841095034733
+--- !u!114 &3892794976312960690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10618,6 +10628,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!4 &4543141367081910922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
@@ -10686,7 +10698,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6600712209755413678}
+      objectReference: {fileID: 5420811051086505395}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -10732,7 +10744,7 @@ PrefabInstance:
       addedObject: {fileID: 7306616393975330659}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6600712209755413678}
+      addedObject: {fileID: 5420811051086505395}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!1 &3837253557640803102 stripped
 GameObject:
@@ -10773,7 +10785,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &6600712209755413678
+--- !u!114 &5420811051086505395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10788,9 +10800,23 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects:
+  - {fileID: 5502413885079714601}
+  - {fileID: 4242026616949662351}
+  CurrentColor: '#FFFFFF'
+--- !u!1 &4242026616949662351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 686231378031165375, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
+  m_PrefabInstance: {fileID: 3700638891037908272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4470800556284766628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
+  m_PrefabInstance: {fileID: 3700638891037908272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5502413885079714601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9153512574549304857, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
   m_PrefabInstance: {fileID: 3700638891037908272}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4298185366379149668
@@ -10856,7 +10882,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6714426222083278099}
+      objectReference: {fileID: 8871131020488705486}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -10902,7 +10928,7 @@ PrefabInstance:
       addedObject: {fileID: 3953298503125375480}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6714426222083278099}
+      addedObject: {fileID: 8871131020488705486}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!4 &3960369194364046832 stripped
 Transform:
@@ -10948,7 +10974,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &6714426222083278099
+--- !u!114 &8871131020488705486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10963,6 +10989,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!1001 &4866610066006414197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11308,7 +11336,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7211252443333389239}
+      objectReference: {fileID: 6210780607087389829}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -11354,7 +11382,7 @@ PrefabInstance:
       addedObject: {fileID: 2238238134408544235}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7211252443333389239}
+      addedObject: {fileID: 6210780607087389829}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!1 &6115840070992741606 stripped
 GameObject:
@@ -11395,7 +11423,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &7211252443333389239
+--- !u!114 &6210780607087389829
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11410,6 +11438,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!4 &6887134715207163484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
@@ -11577,7 +11607,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8171893614180272025}
+      objectReference: {fileID: 6224182890528417691}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -11619,7 +11649,7 @@ PrefabInstance:
       addedObject: {fileID: 2191710109318696643}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8171893614180272025}
+      addedObject: {fileID: 6224182890528417691}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!4 &6018017575486372998 stripped
 Transform:
@@ -11665,7 +11695,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &8171893614180272025
+--- !u!114 &6224182890528417691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11680,6 +11710,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!1001 &7080068776340901216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11743,7 +11775,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1490421310152805946}
+      objectReference: {fileID: 4749284804201151}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -11789,7 +11821,7 @@ PrefabInstance:
       addedObject: {fileID: 7304937964666056039}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1490421310152805946}
+      addedObject: {fileID: 4749284804201151}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!1 &7231254583352599374 stripped
 GameObject:
@@ -11830,7 +11862,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &1490421310152805946
+--- !u!114 &4749284804201151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11845,6 +11877,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!4 &8003251781219252724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
@@ -12108,7 +12142,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7312866215767649773}
+      objectReference: {fileID: 8587297624650343799}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -12154,7 +12188,7 @@ PrefabInstance:
       addedObject: {fileID: 7100730930158142444}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7312866215767649773}
+      addedObject: {fileID: 8587297624650343799}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!1 &7025817163004891086 stripped
 GameObject:
@@ -12195,7 +12229,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &7312866215767649773
+--- !u!114 &8587297624650343799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12210,6 +12244,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!4 &7695358535018714484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959326222112240788, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
@@ -12278,7 +12314,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5188840667129188386}
+      objectReference: {fileID: 6470480661069867655}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -12324,7 +12360,7 @@ PrefabInstance:
       addedObject: {fileID: 1904232644116823658}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5188840667129188386}
+      addedObject: {fileID: 6470480661069867655}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!4 &7318693332684192398 stripped
 Transform:
@@ -12370,7 +12406,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &5188840667129188386
+--- !u!114 &6470480661069867655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12385,6 +12421,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!1001 &7600707094196557958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12526,7 +12564,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3801306880714663767}
+      objectReference: {fileID: 2338391310072123918}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -12572,7 +12610,7 @@ PrefabInstance:
       addedObject: {fileID: 3443466365466633002}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3801306880714663767}
+      addedObject: {fileID: 2338391310072123918}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!4 &7245268232242120805 stripped
 Transform:
@@ -12618,7 +12656,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &3801306880714663767
+--- !u!114 &2338391310072123918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12633,6 +12671,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!1001 &7836256799765026777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12696,7 +12736,7 @@ PrefabInstance:
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2362753399887463972}
+      objectReference: {fileID: 1448785564206947236}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -12742,7 +12782,7 @@ PrefabInstance:
       addedObject: {fileID: 3974039372383538180}
     - targetCorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2362753399887463972}
+      addedObject: {fileID: 1448785564206947236}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
 --- !u!4 &7057083541377278797 stripped
 Transform:
@@ -12788,7 +12828,7 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
---- !u!114 &2362753399887463972
+--- !u!114 &1448785564206947236
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12803,6 +12843,8 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  colorChangeObjects: []
+  CurrentColor: '#FFFFFF'
 --- !u!1001 &8039399478253764327
 PrefabInstance:
   m_ObjectHideFlags: 0

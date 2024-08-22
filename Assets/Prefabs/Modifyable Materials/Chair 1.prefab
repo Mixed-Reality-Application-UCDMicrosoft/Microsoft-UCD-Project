@@ -90,9 +90,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: -6899242656025005300}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5263821434200282754}
   m_SourcePrefab: {fileID: 100100000, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
 --- !u!1 &440199038059933230 stripped
 GameObject:
@@ -485,35 +482,8 @@ MonoBehaviour:
   executionOrder: 0
   constraintOnMovement: 0
   useLocalSpaceForConstraint: 0
---- !u!114 &5263821434200282754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440199038059933230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c87673a0684d4ae6bca8f68e8c57bc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorChangeObjects:
-  - {fileID: 9153512574549304857}
-  - {fileID: 686231378031165375}
-  nameObject: Chair
-  currentColor: {r: 1, g: 1, b: 1, a: 0}
---- !u!1 &686231378031165375 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 243041194690276544, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
-  m_PrefabInstance: {fileID: 782095130903106431}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &959326222112240788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
-  m_PrefabInstance: {fileID: 782095130903106431}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &9153512574549304857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8493015188241380710, guid: e89cfa2b3eb6b1f4498c38c76f8bc5e6, type: 3}
   m_PrefabInstance: {fileID: 782095130903106431}
   m_PrefabAsset: {fileID: 0}

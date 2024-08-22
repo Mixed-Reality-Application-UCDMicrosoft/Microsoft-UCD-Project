@@ -99,17 +99,6 @@ public class LayoutPlayer : NetworkBehaviour
         DisplayName = name;
     }
 
-    [Command]
-    private void CmdCheckLoaded()
-    {
-        /*
-        GameObject p = Instantiate(playerPrefab.gameObject);
-        PlayerHandler ph = p.GetComponent<PlayerHandler>();
-        Network.SpawnCapsules.Add(ph);
-        NetworkServer.Spawn(p, connectionToClient);
-        */
-        
-    }
 
 }
 
