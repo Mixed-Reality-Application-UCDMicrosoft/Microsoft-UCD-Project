@@ -18400,7 +18400,7 @@ MonoBehaviour:
   state: 0
   arMarker: {fileID: 1297420113}
   roomPlayerPrefab: {fileID: 4703323539637144066, guid: 2b8ec6bb2b51e444e9601d55e7cd4c8d, type: 3}
-  layoutPlayerPrefab: {fileID: 4173942735094562410, guid: 3c96dbee2855e485cbafe2cd296afc1d, type: 3}
+  layoutPlayerPrefab: {fileID: 4173942735094562410, guid: c19cdc31baa8846e3b24c36a87c9fd93, type: 3}
   WeddingLayout1: {fileID: 6304365267076531327, guid: 4d0eac1435eff4dc58454159755320fb, type: 3}
   floorPrefab: {fileID: 9154121274687910428, guid: 3ebaa2aaa62114f21a4f3a02dcf18bb3, type: 3}
   XRRig: {fileID: 1611388950}

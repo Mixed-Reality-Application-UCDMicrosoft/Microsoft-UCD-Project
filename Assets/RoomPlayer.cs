@@ -239,7 +239,6 @@ public class RoomPlayer : NetworkBehaviour
     [ClientRpc(includeOwner = true)]
     public void RpcDisable()
     {
-        Debug.Log("Disabling");
         gameObject.SetActive(false);
     }
 

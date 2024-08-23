@@ -6,8 +6,7 @@ using System;
 
 public class LayoutPlayer : NetworkBehaviour
 {
-    [Header("Prefabs")]
-    [SerializeField] private PlayerHandler playerPrefab;
+    [SerializeField] private PlayerHandler player;
 
     [Header("Sync Vars")]
     [SyncVar(hook = nameof(HandleDisplayNameChange))]
@@ -45,6 +44,7 @@ public class LayoutPlayer : NetworkBehaviour
             break;
         }
         transform.position = qrPos;
+        
 
     }
     public override void OnStopClient()
@@ -59,6 +59,11 @@ public class LayoutPlayer : NetworkBehaviour
     public override void OnStartAuthority()
     {
         transform.SetParent(Network.XRRig.transform);
+        player.xrObject = Network.XRRig;
+        player.cameraObject = Network.CameraObject;
+        player.enabled = true;
+        player.SendName(DisplayName);
+        Debug.Log($"Started stuff, {player}", player);
     }
 
     [Server]
