@@ -7,8 +7,7 @@ using MixedReality.Toolkit.SpatialManipulation;
 
 public class WeddingChange : MonoBehaviour
 {
-    public ModifyableObject currentlySelected;
-    public GameObject canvasDialogue;
+    public NetworkedObjectManipulator currentlySelected;
     public TextMeshProUGUI colorText;
     public TextMeshProUGUI selectedHeader;
 
@@ -16,6 +15,8 @@ public class WeddingChange : MonoBehaviour
 
     public GameObject chairObject;
     public GameObject chairParent;
+
+    public ColorChangeUIManager colorChangeUI;
     
 
     // Start is called before the first frame update
@@ -24,26 +25,18 @@ public class WeddingChange : MonoBehaviour
         Debug.Log("started");
         colorText.text = "█";
 
+        colorChangeUI = FindObjectOfType<ColorChangeUIManager>();
+        Debug.Log(colorChangeUI.name);
+
     }
 
     public void OnInteraction(GameObject interactedObject)
     {
-        if (currentlySelected != null)
-        {
-            OnCancelDialogue();
-        }
         interactedObject.GetComponent<BoundsControl>().HandlesActive = true;
 
 
-        currentlySelected = interactedObject.GetComponent<ModifyableObject>();
-        Debug.Log("Interacted with " + currentlySelected.nameObject);
-
-        Color c = currentlySelected.GetColor();
-        r.Value = c.r;
-        g.Value = c.g;
-        b.Value = c.b;
-        canvasDialogue.SetActive(true);
-
+        currentlySelected = interactedObject.GetComponent<NetworkedObjectManipulator>();
+        colorChangeUI.selectedObject = currentlySelected;
     }
 
     public void OnColorChange(SelectedInformation selected)
@@ -72,38 +65,22 @@ public class WeddingChange : MonoBehaviour
             Debug.LogError("Color value not found: " + selected.selectedString);
         }
         colorText.color = color;
-        currentlySelected.ChangeColor(color);
     }
 
     public void OnCancelDialogue()
     {
         var bounds = currentlySelected.GetComponent<BoundsControl>();
 
-        currentlySelected.ResetColor();
         currentlySelected = null;
-        canvasDialogue.SetActive(false);
-        Debug.Log("Closed dialogue");
+        colorChangeUI.selectedObject = null;
     }
 
     public void OnApplyAll()
     {
-        currentlySelected.ApplyCurrentColor();
-
-        var c = currentlySelected.currentColor;
-        var parent = currentlySelected.transform.parent;
-
-        foreach (var child in parent.GetComponentsInChildren<ModifyableObject>())
-        {
-            child.currentColor = c;
-            child.ChangeColor(c);
-            child.ApplyCurrentColor();
-        }
         
     }
 
     public void OnConfirm()
     {
-        currentlySelected.ApplyCurrentColor();
-        canvasDialogue.SetActive(false);
     }
 }
