@@ -6,7 +6,8 @@ using UnityEngine;
 public class NetworkedObjectManipulator : NetworkBehaviour
 {
     public GameObject[] colorChangeObjects;
-    //public readonly string nameObject;
+    public bool haveParent = false;
+    public readonly string nameObject;
 
     [SyncVar(hook = nameof(HandleColorChange))]
     public string CurrentColor = "#FFFFFF";
@@ -22,6 +23,18 @@ public class NetworkedObjectManipulator : NetworkBehaviour
         CmdTransferOwn();
     }
 
+    [ClientCallback]
+    public void ApplyAll()
+    {
+        if (!haveParent) return;
+        Transform parent = gameObject.transform.parent;
+        foreach (NetworkedObjectManipulator m in parent.GetComponentsInChildren<NetworkedObjectManipulator>())
+        {
+            m.ChangeColor(CurrentColor);
+        }
+
+    }
+
     [Command(requiresAuthority = false)]
     public void CmdTransferOwn(NetworkConnectionToClient sender = null)
     {
@@ -30,7 +43,6 @@ public class NetworkedObjectManipulator : NetworkBehaviour
             Debug.Log("Sender is null!!");
             return;
         }
-        Debug.Log($"Sender ID:{sender.connectionId}");
         NetworkIdentity id = gameObject.GetComponentInParent<NetworkIdentity>();
         id.RemoveClientAuthority();
         id.AssignClientAuthority(sender);
@@ -46,8 +58,6 @@ public class NetworkedObjectManipulator : NetworkBehaviour
     {
         Color c;
         ColorUtility.TryParseHtmlString(newCol, out c);
-
-        Debug.Log($"System color {oldCol} / {newCol}, {c}");
 
         for (int i = 0; i < colorChangeObjects.Length; i++)
         {
