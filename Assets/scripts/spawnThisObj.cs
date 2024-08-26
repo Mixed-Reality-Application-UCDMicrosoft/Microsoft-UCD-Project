@@ -5,45 +5,55 @@ using MixedReality.Toolkit.UX;
 
 public class spawnThisObj : MonoBehaviour
 {
-    public GameObject Obj_toSpawn; 
-    public Transform plane; 
+    public GameObject Obj_toSpawn;
     private GameObject theCamera, HouseMenu;
 
-    public GameObject[] LofO; 
-    public int Idx = 0; 
+    public GameObject[] LofO;
+    public int Idx = 0;
+
+    // Height offset to spawn the object just above the floor, 0.05m should be enough.
+    public float spawnHeightOffset = 0.05f;
+
+    // Distance in meters to spawn the object in front of the camera
+    public float cameraForwardOffset = 1.5f;
 
     void Start()
     {
-
         theCamera = GameObject.Find("Main Camera");
         HouseMenu = GameObject.Find("VerticalScrolling");
 
-        
-        LofO = new GameObject[10]; 
+        LofO = new GameObject[10];
     }
 
     public void Spawner()
     {
-        float spawnHeightOffset = 0.01f;
-        float cameraOffset = -0.5f;
+        // Define ray origin to be a bit in front of the camera
+        Vector3 rayOrigin = theCamera.transform.position + theCamera.transform.forward * cameraForwardOffset;
 
-        Vector3 planeTopPosition = plane.position + plane.up * (plane.localScale.y / 2 + spawnHeightOffset);
-        Vector3 cameraPosition = theCamera.transform.position + theCamera.transform.forward * cameraOffset;
-
-        Vector3 spawnPosition = new Vector3(cameraPosition.x, planeTopPosition.y, cameraPosition.z);
-
-        GameObject objectSpawned = Instantiate(Obj_toSpawn, spawnPosition, Quaternion.identity);
-
-        if (Idx < LofO.Length)
+        // Raycast downward from the rayOrigin to detect the floor
+        if (Physics.Raycast(rayOrigin, Vector3.down, out RaycastHit hit))
         {
-            LofO[Idx] = objectSpawned;
-            Idx++;
+            // Position the object just above the floor (detected by the raycast)
+            Vector3 floorPosition = hit.point;
+            Vector3 spawnPosition = new Vector3(floorPosition.x, floorPosition.y + spawnHeightOffset, floorPosition.z);
+
+            // Instantiate the object at the calculated position
+            GameObject objectSpawned = Instantiate(Obj_toSpawn, spawnPosition, Quaternion.identity);
+
+            // Store the spawned object in the array if there is space
+            if (Idx < LofO.Length)
+            {
+                LofO[Idx] = objectSpawned;
+                Idx++;
+            }
+            else
+            {
+                Debug.LogWarning("LofO array is full!");
+            }
         }
         else
         {
-            Debug.LogWarning("LofO array is full!");
+            Debug.LogWarning("No floor detected! Ensure the floor has a collider.");
         }
     }
-
 }
-
