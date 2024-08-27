@@ -5563,9 +5563,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentlySelected: {fileID: 0}
-  canvasDialogue: {fileID: 7146944768671665285}
   colorText: {fileID: 3364896897863762662}
-  str: 
+  selectedHeader: {fileID: 0}
+  r: {fileID: 0}
+  g: {fileID: 0}
+  b: {fileID: 0}
+  chairObject: {fileID: 0}
+  chairParent: {fileID: 0}
+  colorChangeUI: {fileID: 0}
 --- !u!1 &6567674958859821926
 GameObject:
   m_ObjectHideFlags: 0
@@ -7407,7 +7412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8859849111806779444
 Transform:
   m_ObjectHideFlags: 0
