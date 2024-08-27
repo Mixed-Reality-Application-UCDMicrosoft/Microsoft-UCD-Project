@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.MixedReality.OpenXR;
 using Mirror;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NetworkManagerEvent : NetworkManager
 {
@@ -141,6 +142,13 @@ public class NetworkManagerEvent : NetworkManager
             }
         }
         return true;
+    }
+
+    public void DisconnectEverything()
+    {
+        StopHost();
+        StopClient();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     [Server]

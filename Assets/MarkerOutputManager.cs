@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Microsoft.MixedReality.OpenXR;
+using TMPro;
 using UnityEngine;
 
 public class MarkerOutputManager : MonoBehaviour
@@ -9,11 +10,12 @@ public class MarkerOutputManager : MonoBehaviour
     [SerializeField] private GameObject cameraObject;
 
     [SerializeField] private bool simulateSending = false;
+    [SerializeField] private TextMeshProUGUI debugText;
 
     private ARMarkerManager arm;
 
     public Vector3 CoOrds;
-
+    
     private void Start()
     {
         arm = GetComponent<ARMarkerManager>();
@@ -27,6 +29,11 @@ public class MarkerOutputManager : MonoBehaviour
             Vector3 pos = code.transform.position;
             networkManager.SendPlayerQRCodePos(pos);
             CoOrds = pos;
+
+            string s = $"Position: {code.transform.position}\nRotation: {code.transform.rotation}\nCenter {code.center}\n";
+            s += $"Text: {code.GetDecodedString()}\n";
+            s += $"State: {code.trackingState}";
+            debugText.text = s;
         }
     }
     private void Update()

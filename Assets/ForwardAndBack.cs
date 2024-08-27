@@ -13,6 +13,11 @@ public class ForwardAndBack : MonoBehaviour
         foreach (var row in rows) row.SetActive(false);
         rows[currentPos].SetActive(true);
     }
+
+    private void OnDisable()
+    {
+        foreach (var row in rows) row.SetActive(false);
+    }
     public void ScrollUp()
     {
         foreach (var r in rows)
