@@ -7,13 +7,15 @@ using TMPro;
 public class WeddingChange : MonoBehaviour
 {
     public NetworkedObjectManipulator currentlySelected;
+    public GameObject NonNetworkedObjects;
 
     [HideInInspector] public ColorChangeUIManager colorChangeUI;
     [HideInInspector] public OptionsManager optionsUI;
 
     private void Start()
     {
-        GameObject g = Instantiate(NonNetworkedObjects, transform.parent.parent);
+        if (NonNetworkedObjects != null)
+            Instantiate(NonNetworkedObjects, transform.parent.parent);
         colorChangeUI = FindObjectOfType<ColorChangeUIManager>();
         optionsUI = FindObjectOfType<OptionsManager>();
     }

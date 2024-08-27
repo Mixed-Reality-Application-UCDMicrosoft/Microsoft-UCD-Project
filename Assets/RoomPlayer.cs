@@ -147,6 +147,12 @@ public class RoomPlayer : NetworkBehaviour
             case Layouts.WEDDING1:
                 currentLayout.text = "<color=green>Wedding Layout </color>";
                 break;
+            case Layouts.CORPORATE1:
+                currentLayout.text = "<color=green>Corporate Layout</color>";
+                break;
+            case Layouts.INFORMAL1:
+                currentLayout.text = "<color=green>Informal Layout</color>";
+                break;
             default:
                 currentLayout.text = "Unknown layout";
                 break;
