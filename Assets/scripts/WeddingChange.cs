@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using MixedReality.Toolkit.UX;
 using TMPro;
-using MixedReality.Toolkit.SpatialManipulation;
 
 public class WeddingChange : MonoBehaviour
 {
@@ -14,6 +13,7 @@ public class WeddingChange : MonoBehaviour
 
     private void Start()
     {
+        GameObject g = Instantiate(NonNetworkedObjects, transform.parent.parent);
         colorChangeUI = FindObjectOfType<ColorChangeUIManager>();
         optionsUI = FindObjectOfType<OptionsManager>();
     }
@@ -32,4 +32,5 @@ public class WeddingChange : MonoBehaviour
         colorChangeUI.selectedObject = null;
         optionsUI.selectedObject = null;
     }
+    
 }

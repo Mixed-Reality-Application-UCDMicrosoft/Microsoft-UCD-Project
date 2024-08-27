@@ -10,8 +10,8 @@ public class ColorChangeUIManager : MonoBehaviour
     [SerializeReference] private Slider greenSlider;
     [SerializeReference] private Slider blueSlider;
 
-
-    [HideInInspector] public NetworkedObjectManipulator selectedObject = null;
+    [Header("Debug do not assign")]
+    public NetworkedObjectManipulator selectedObject = null;
 
     private int prevRed = 0;
     private int prevGreen = 0;
@@ -31,6 +31,7 @@ public class ColorChangeUIManager : MonoBehaviour
         redSlider.Value = red;
         greenSlider.Value = green;
         blueSlider.Value = blue;
+        Debug.Log($"Printing {colorString}");
         selectedObject.ChangeColor(colorString);
     }
 

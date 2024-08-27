@@ -17,6 +17,7 @@ public class NetworkManagerEvent : NetworkManager
 
     [Header("Layouts")]
     public GameObject WeddingLayout1;
+    public GameObject[] CorporateLayout1;
     public GameObject floorPrefab;
 
     [Header("Camera Objects")]
@@ -175,11 +176,21 @@ public class NetworkManagerEvent : NetworkManager
         if (!CheckReady()) return;
         state = NetworkManagerState.RECRUITMENT_FINISED;
 
-        GameObject lay = null;
         if (RoomPlayers[0].SelectedLayout == Layouts.WEDDING1)
-            lay = WeddingLayout1;
-        lay = Instantiate(lay);
-        NetworkServer.Spawn(lay);
+        {
+            GameObject lay = Instantiate(WeddingLayout1);
+            NetworkServer.Spawn(lay);
+        }
+        else if (RoomPlayers[0].SelectedLayout == Layouts.CORPORATE1)
+        {
+            foreach(GameObject g in CorporateLayout1)
+            {
+                GameObject g2 = Instantiate(g);
+                NetworkServer.Spawn(g2);
+            }
+        }
+        
+        
         GameObject floor = Instantiate(floorPrefab);
         NetworkServer.Spawn(floor);
         

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
-public class AttatchToQRCode : NetworkBehaviour
+public class AttatchToQRCode : MonoBehaviour
 {
     public void Start()
     {
