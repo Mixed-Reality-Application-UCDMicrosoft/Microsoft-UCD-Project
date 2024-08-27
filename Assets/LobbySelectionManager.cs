@@ -5,7 +5,6 @@ using UnityEngine;
 public class LobbySelectionManager : MonoBehaviour
 {
     [SerializeField] private NetworkManagerEvent networkManager;
-    [SerializeField] private GameObject lobbyObject;
     [SerializeField] private GameObject joinCanvasObject;
 
     public void OnHostButton()

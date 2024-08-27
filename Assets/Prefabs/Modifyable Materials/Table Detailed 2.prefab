@@ -48,9 +48,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7493596028755563170, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -4292154010595695564, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.04
+      objectReference: {fileID: 0}
+    - target: {fileID: -2387495837834380839, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: -94416088255261542, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 409499183949123357, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
       propertyPath: m_Name
       value: Table Detailed 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248808924673776129, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891792828147989070, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74,9 +102,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5172119021983321925}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3020718343084737413}
   m_SourcePrefab: {fileID: 100100000, guid: d3d21531dc66646dc9db554501efaad0, type: 3}
 --- !u!4 &1269992006831617950 stripped
 Transform:
@@ -438,18 +463,3 @@ MonoBehaviour:
   executionOrder: 0
   constraintOnMovement: 0
   useLocalSpaceForConstraint: 0
---- !u!114 &3020718343084737413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933235754137873700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c87673a0684d4ae6bca8f68e8c57bc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorChangeObjects: []
-  nameObject: 
-  currentColor: {r: 0, g: 0, b: 0, a: 0}

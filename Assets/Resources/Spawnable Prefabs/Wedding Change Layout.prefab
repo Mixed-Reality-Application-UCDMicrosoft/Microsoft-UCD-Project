@@ -322,7 +322,7 @@ MonoBehaviour:
   target: {fileID: 612223605192957440}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -1134,7 +1134,7 @@ MonoBehaviour:
   target: {fileID: 2105784448989744789}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -1384,7 +1384,7 @@ MonoBehaviour:
   target: {fileID: 2035131870028981691}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -1623,7 +1623,7 @@ MonoBehaviour:
   target: {fileID: 2301798913856280947}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   target: {fileID: 1496120868091691503}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -1997,6 +1997,10 @@ PrefabInstance:
       value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
+      propertyPath: constraintsManager
+      value: 
+      objectReference: {fileID: 1573974936823152272}
+    - target: {fileID: 1843820228630909809, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
       propertyPath: m_LastSelectExited.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -2012,6 +2016,10 @@ PrefabInstance:
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 3828572587030743232}
+    - target: {fileID: 2794235424484757819, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
+      propertyPath: handlesActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2023,6 +2031,17 @@ PrefabInstance:
       insertIndex: 8
       addedObject: {fileID: 2732486208892282687}
   m_SourcePrefab: {fileID: 100100000, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
+--- !u!114 &1573974936823152272 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2660647378397856324, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
+  m_PrefabInstance: {fileID: 3547540646137740500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3972319858049897210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cdab0cd5a0916419324bb54314773d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3972319858049897210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 440199038059933230, guid: 2f34814a57c464ceda0b622231073cdf, type: 3}
@@ -2046,7 +2065,7 @@ MonoBehaviour:
   target: {fileID: 4353665212868134976}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -2258,7 +2277,7 @@ MonoBehaviour:
   target: {fileID: 4292281643730790992}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -2507,7 +2526,7 @@ MonoBehaviour:
   target: {fileID: 3956397870821026927}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -2746,7 +2765,7 @@ MonoBehaviour:
   target: {fileID: 3707830351407256994}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -2980,7 +2999,7 @@ MonoBehaviour:
   target: {fileID: 5558576479833060843}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -3219,7 +3238,7 @@ MonoBehaviour:
   target: {fileID: 5259680021367232875}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -3468,7 +3487,7 @@ MonoBehaviour:
   target: {fileID: 5162387426415916689}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -3707,7 +3726,7 @@ MonoBehaviour:
   target: {fileID: 5096132894215718010}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -3946,7 +3965,7 @@ MonoBehaviour:
   target: {fileID: 4889370820999376722}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -4175,7 +4194,7 @@ MonoBehaviour:
   target: {fileID: 9052587389996798531}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -4525,7 +4544,7 @@ MonoBehaviour:
   target: {fileID: 8192346607018291353}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1

@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 445865183970867352}
@@ -492,7 +492,7 @@ MonoBehaviour:
   target: {fileID: 7374879483855128488}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -614,7 +614,7 @@ MonoBehaviour:
   target: {fileID: 1035561766928013125}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -1248,7 +1248,7 @@ MonoBehaviour:
   target: {fileID: 1038128331143123864}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -1370,7 +1370,7 @@ MonoBehaviour:
   target: {fileID: 930583536083250852}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -2011,7 +2011,7 @@ MonoBehaviour:
   target: {fileID: 8118132852673920496}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -2397,7 +2397,7 @@ MonoBehaviour:
   target: {fileID: 4749243543994431511}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -2777,7 +2777,7 @@ MonoBehaviour:
   target: {fileID: 3068680609786395838}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -3181,7 +3181,7 @@ MonoBehaviour:
   target: {fileID: 5521035371807331069}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -3563,7 +3563,7 @@ MonoBehaviour:
   target: {fileID: 3529719802011357836}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -3935,7 +3935,7 @@ MonoBehaviour:
   target: {fileID: 4328563994766622988}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -4317,7 +4317,7 @@ MonoBehaviour:
   target: {fileID: 6139184067133946484}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -4694,7 +4694,7 @@ MonoBehaviour:
   target: {fileID: 5868758481623445135}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -5075,7 +5075,7 @@ MonoBehaviour:
   target: {fileID: 5771515817724719353}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -5461,7 +5461,7 @@ MonoBehaviour:
   target: {fileID: 446012383235319999}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -5833,7 +5833,7 @@ MonoBehaviour:
   target: {fileID: 7735157008349011284}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
@@ -6224,7 +6224,7 @@ MonoBehaviour:
   target: {fileID: 1212493999919095929}
   syncPosition: 1
   syncRotation: 1
-  syncScale: 0
+  syncScale: 1
   onlySyncOnChange: 1
   compressRotation: 1
   interpolatePosition: 1
