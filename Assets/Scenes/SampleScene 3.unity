@@ -15634,7 +15634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df6e2a8f5c58cf4184b32d359111444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  markerPrefab: {fileID: 81722369604054819, guid: 316c718ba3082de4185b85b7a0fdc3be, type: 3}
+  markerPrefab: {fileID: 0}
   enabledMarkerTypes: 01000000
   defaultTransformMode: 0
 --- !u!114 &1297420111
